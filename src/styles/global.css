@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  --color-alabaster: #fbfbfa;
+  --color-obsidian: #1c1c1a;
+  --color-brass: #b38f4f;
+  --color-brass-dark: #91713b;
+  --color-brass-light: #d4b47c;
+}
+
+/* Base selector typography lock overrides */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif) !important;
+}
+
+body, span, label, input, select, textarea, button, a {
+  font-family: var(--font-sans);
+}
+
+p {
+  color: #1c1c1a !important;
+  font-family: var(--font-sans) !important;
+  font-size: 1rem !important; /* text-base */
+  line-height: 1.625 !important; /* leading-relaxed */
+  font-weight: 500 !important; /* font-medium */
+}
+
+/* Custom transitions and scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-alabaster);
+  color: var(--color-obsidian);
+  overflow-x: hidden;
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-alabaster);
+}
+::-webkit-scrollbar-thumb {
+  background: #e2e2e0;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brass);
+}
+
+/* Selection highlight */
+::selection {
+  background-color: rgba(179, 143, 79, 0.2);
+  color: var(--color-obsidian);
+}
+
+/* Smooth zoom-in on hover for images */
+.hover-zoom {
+  overflow: hidden;
+}
+.hover-zoom img {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-zoom:hover img {
+  transform: scale(1.05);
+}

@@ -1,0 +1,135 @@
+---
+---
+<section class="relative bg-[#fbfbfa] flex flex-col md:block">
+  
+  <!-- Main Layout Container (Desktop only alignment, mobile is hidden) -->
+  <div class="max-w-7xl mx-auto px-6 w-full hidden md:block">
+    <div class="grid grid-cols-2 gap-12 items-center pt-6 pb-8">
+      
+      <!-- Left Column: Text Content -->
+      <div class="flex flex-col justify-center text-left">
+        <div class="max-w-xl flex flex-col items-start space-y-3.5 animate-fade-in-up">
+          
+          <!-- Omaha Label (Gold #b38f4f) -->
+          <span class="text-xs font-bold uppercase tracking-widest text-[#b38f4f]">
+            Omaha Custom Remodeling
+          </span>
+
+          <!-- Headline: Serif Font Stack, bold, charcoal (Removed '— Finally') -->
+          <h1 class="font-serif text-3xl md:text-5xl lg:text-6xl font-bold text-[#1c1c1a] leading-tight">
+            The Kitchen You've Been<br class="hidden sm:inline"/> Waiting For
+          </h1>
+
+          <!-- Description Paragraph -->
+          <p class="text-[#1c1c1a] font-sans text-base leading-relaxed font-medium max-w-xl">
+            We turn outdated kitchens, cramped bathrooms, and dark basements into bright, functional spaces for your family. From the first 3D design to the final clean-up, we handle everything.
+          </p>
+
+          <!-- Primary CTA Button (Charcoal background) -->
+          <div class="pt-2.5 w-full sm:w-auto">
+            <a 
+              href="#contact-form" 
+              class="inline-block w-full sm:w-auto bg-[#1c1c1a] text-white hover:bg-[#b38f4f] transition-all duration-300 font-medium text-center text-xs md:text-sm uppercase tracking-widest px-8 py-5 focus:outline-none focus:ring-2 focus:ring-[#b38f4f] focus:ring-offset-2"
+              id="hero-cta-btn-desktop"
+            >
+              Request a Free Estimate & 3D Layout
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Column: Image Content (Symmetric margin on the right, matches container) -->
+      <div class="relative overflow-hidden bg-stone-100 rounded-2xl shadow-sm border border-stone-200/20 aspect-[4/3] w-full animate-fade-in-up">
+        <img 
+          src="/images/hero_kitchen.png" 
+          alt="Bright modern kitchen remodeled in Omaha by Heartland Kitchen & Bath" 
+          class="absolute inset-0 w-full h-full object-cover scale-100 transition-transform duration-10000"
+          id="hero-img"
+        />
+        
+        <!-- Floating Badge in bottom-left corner -->
+        <div class="absolute bottom-4 left-4 lg:bottom-6 lg:left-6 z-10 bg-[#1c1c1a]/95 text-white px-3 py-2 lg:px-4 lg:py-3 rounded border border-white/10 shadow-lg select-none">
+          <span class="block text-xs lg:text-sm font-bold tracking-tight text-white">50+ Projects Completed</span>
+          <span class="block text-[8px] lg:text-[9px] uppercase tracking-widest text-[#b38f4f] font-bold mt-0.5">Omaha, Nebraska</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Layout (Bypasses container, exactly matches original mobile view, hidden on desktop) -->
+  <div class="w-full flex flex-col justify-start px-6 pt-6 pb-6 text-left md:hidden">
+    <div class="max-w-xl flex flex-col items-start space-y-3.5 animate-fade-in-up">
+      
+      <!-- Omaha Label (Gold #b38f4f) -->
+      <span class="text-xs font-bold uppercase tracking-widest text-[#b38f4f]">
+        Omaha Custom Remodeling
+      </span>
+
+      <!-- Headline (Removed '— Finally') -->
+      <h1 class="font-serif text-3xl font-bold text-[#1c1c1a] leading-tight">
+        The Kitchen You've Been<br class="hidden sm:inline"/> Waiting For
+      </h1>
+
+      <!-- Description Paragraph -->
+      <p class="text-[#1c1c1a] font-sans text-base leading-relaxed font-medium max-w-xl">
+        We turn outdated kitchens, cramped bathrooms, and dark basements into bright, functional spaces for your family. From the first 3D design to the final clean-up, we handle everything.
+      </p>
+
+      <!-- Primary CTA Button -->
+      <div class="pt-2.5 w-full sm:w-auto">
+        <a 
+          href="#contact-form" 
+          class="inline-block w-full sm:w-auto bg-[#1c1c1a] text-white hover:bg-[#b38f4f] transition-all duration-300 font-medium text-center text-xs uppercase tracking-widest px-8 py-5 focus:outline-none focus:ring-2 focus:ring-[#b38f4f] focus:ring-offset-2"
+          id="hero-cta-btn"
+        >
+          Request a Free Estimate & 3D Layout
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Image (Hidden on desktop, exactly matches original mobile view) -->
+  <div class="w-full aspect-[4/3] min-h-[300px] relative overflow-hidden bg-stone-100 rounded-t-2xl shadow-sm border border-stone-200/20 md:hidden">
+    <img 
+      src="/images/hero_kitchen.png" 
+      alt="Bright modern kitchen remodeled in Omaha by Heartland Kitchen & Bath" 
+      class="absolute inset-0 w-full h-full object-cover scale-100"
+    />
+    
+    <!-- Floating Badge in bottom-left corner -->
+    <div class="absolute bottom-4 left-4 z-10 bg-[#1c1c1a]/95 text-white px-3 py-2 rounded border border-white/10 shadow-lg select-none">
+      <span class="block text-xs font-bold tracking-tight text-white">50+ Projects Completed</span>
+      <span class="block text-[8px] uppercase tracking-widest text-[#b38f4f] font-bold mt-0.5">Omaha, Nebraska</span>
+    </div>
+  </div>
+
+</section>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const img = document.getElementById('hero-img');
+    if (img) {
+      img.classList.add('scale-105');
+    }
+  });
+</script>
+
+<style>
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+</style>

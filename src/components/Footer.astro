@@ -1,0 +1,153 @@
+---
+---
+<footer id="contact-form" class="bg-[#fbfbfa] text-[#1c1c1a] pt-12 pb-6 md:pt-16 md:pb-6 border-t border-black/[0.05]">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-16 items-start">
+      
+      <!-- Left Column: Branding and Direct Information -->
+      <div class="lg:col-span-5 flex flex-col space-y-3.5">
+        <span class="tracking-widest text-xs font-semibold text-[#b38f4f] uppercase block">
+          Let's Connect
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-[#1c1c1a]">
+          Let's Talk About Your Project
+        </h2>
+        <p class="text-[#1c1c1a] font-sans text-base leading-relaxed font-medium max-w-md">
+          Fill out this simple form, and our Omaha-based design team will reach out to you within one business day.<span class="hidden lg:inline"> We will discuss your goals, explain our 3D process, and set up a convenient time to view your home.</span>
+        </p>
+        <div class="hidden lg:block pt-2.5 text-xs md:text-sm text-[#1c1c1a]/65 space-y-1.5">
+          <p class="font-bold text-[#1c1c1a]">Heartland Kitchen & Bath Studio</p>
+          <p>Serving Omaha, Bennington, Elkhorn, and Gretna</p>
+          <p>inquiry@heartlandkb.com | (402) 234-8900</p>
+        </div>
+      </div>
+
+      <!-- Right Column: Secure, Padded White Form Card -->
+      <div class="lg:col-span-7 bg-white border border-stone-200/80 p-8 md:p-12 rounded-lg shadow-sm">
+        <h3 class="font-serif text-xl sm:text-2xl font-bold mb-6 text-[#1c1c1a]">Request a Free Estimate & 3D Layout</h3>
+        
+        <form class="space-y-4" action="#" method="POST" id="inquiry-form">
+          
+          <!-- Input 1: Full Name -->
+          <div class="flex flex-col space-y-1.5">
+            <label for="full-name" class="text-xs uppercase tracking-wider font-bold text-[#1c1c1a]/75">Full Name *</label>
+            <input 
+              type="text" 
+              name="full_name" 
+              id="full-name" 
+              placeholder="Eleanor Vance" 
+              required
+              class="w-full px-4 py-3 bg-[#fbfbfa] border border-stone-200/60 text-[#1c1c1a] focus:outline-none focus:border-[#b38f4f] focus:ring-1 focus:ring-[#b38f4f] transition-all duration-200 rounded"
+            />
+          </div>
+
+          <!-- Input 2: Phone Number (Optional) -->
+          <div class="flex flex-col space-y-1.5">
+            <label for="phone" class="text-xs uppercase tracking-wider font-bold text-[#1c1c1a]/75">Phone Number (Optional)</label>
+            <input 
+              type="tel" 
+              name="phone" 
+              id="phone" 
+              placeholder="(402) 555-0199" 
+              class="w-full px-4 py-3 bg-[#fbfbfa] border border-stone-200/60 text-[#1c1c1a] focus:outline-none focus:border-[#b38f4f] focus:ring-1 focus:ring-[#b38f4f] transition-all duration-200 rounded"
+            />
+          </div>
+
+          <!-- Input 3: Email Address -->
+          <div class="flex flex-col space-y-1.5">
+            <label for="email" class="text-xs uppercase tracking-wider font-bold text-[#1c1c1a]/75">Email Address *</label>
+            <input 
+              type="email" 
+              name="email" 
+              id="email" 
+              placeholder="eleanor@example.com" 
+              required
+              class="w-full px-4 py-3 bg-[#fbfbfa] border border-stone-200/60 text-[#1c1c1a] focus:outline-none focus:border-[#b38f4f] focus:ring-1 focus:ring-[#b38f4f] transition-all duration-200 rounded"
+            />
+          </div>
+
+          <!-- Input 4: Project Type -->
+          <div class="flex flex-col space-y-1.5">
+            <label for="project-type" class="text-xs uppercase tracking-wider font-bold text-[#1c1c1a]/75">Project Type *</label>
+            <div class="relative">
+              <select 
+                name="project_type" 
+                id="project-type" 
+                required
+                class="w-full px-4 py-3 bg-[#fbfbfa] border border-stone-200/60 text-[#1c1c1a] appearance-none focus:outline-none focus:border-[#b38f4f] focus:ring-1 focus:ring-[#b38f4f] transition-all duration-200 cursor-pointer rounded"
+              >
+                <option value="" disabled selected>Select an option...</option>
+                <option value="kitchen">Kitchen Remodeling</option>
+                <option value="bathroom">Bathroom Remodeling</option>
+                <option value="basement">Basement Finishing</option>
+                <option value="other">Other Project</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#1c1c1a]/60">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-2">
+            <button 
+              type="submit" 
+              class="w-full bg-[#1c1c1a] hover:bg-[#b38f4f] text-white font-semibold text-xs md:text-sm uppercase tracking-widest py-4 border border-[#1c1c1a] hover:border-[#b38f4f] transition-all duration-300 cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#b38f4f] focus:ring-offset-2 rounded"
+              id="submit-form-btn"
+            >
+              Send Request
+            </button>
+          </div>
+          
+          <div id="form-feedback" class="hidden text-center text-xs font-semibold text-[#b38f4f] mt-2"></div>
+
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Bottom Footer (Minimalist Logo, Back to Top, Copyright) -->
+    <div class="mt-12 pt-6 border-t border-black/[0.05] flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex flex-col items-center md:items-start">
+        <span class="font-serif text-base tracking-widest text-[#1c1c1a] uppercase font-bold">
+          Heartland Kitchen & Bath
+        </span>
+        <span class="text-[9px] tracking-[0.2em] text-[#1c1c1a]/55 uppercase font-sans font-semibold">
+          Omaha, Nebraska
+        </span>
+      </div>
+      
+      <p class="text-[#1c1c1a] font-sans text-base leading-relaxed font-medium text-center md:text-left">
+        &copy; {new Date().getFullYear()} Heartland Kitchen & Bath. All rights reserved. Premium home renovations.
+      </p>
+
+      <a href="#" class="text-xs uppercase tracking-widest text-[#b38f4f] hover:text-[#1c1c1a] transition-colors duration-300 font-semibold focus:outline-none">
+        Back to Top &uarr;
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  const form = document.getElementById('inquiry-form') as HTMLFormElement;
+  const feedback = document.getElementById('form-feedback');
+  
+  if (form && feedback) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Simulate form submission
+      feedback.textContent = "Thank you! Your request has been sent. We will review it and contact you within 24 hours.";
+      feedback.classList.remove('hidden');
+      
+      // Reset form
+      form.reset();
+      
+      // Hide feedback after 5 seconds
+      setTimeout(() => {
+        feedback.classList.add('hidden');
+      }, 5000);
+    });
+  }
+</script>

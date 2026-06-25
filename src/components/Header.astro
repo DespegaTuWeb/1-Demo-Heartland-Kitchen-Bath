@@ -1,0 +1,177 @@
+---
+---
+<header class="fixed top-0 left-0 right-0 z-50 border-b border-black/[0.05] bg-[#fbfbfa]/95 backdrop-blur-md text-[#1c1c1a] transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between relative z-50">
+    
+    <!-- Typographic Logo stacked exactly like the reference image -->
+    <a href="#" class="group flex flex-col items-start focus:outline-none" aria-label="Heartland Kitchen &amp; Bath Home">
+      <span class="font-serif text-2xl md:text-3xl font-bold tracking-[0.08em] text-[#1c1c1a] uppercase leading-none">
+        Heartland
+      </span>
+      <span class="text-[9px] md:text-[10px] tracking-[0.38em] text-stone-500 uppercase font-sans mt-2 font-bold leading-none">
+        Kitchen &amp; Bath
+      </span>
+    </a>
+
+    <!-- Hamburger Menu Toggle Button -->
+    <button 
+      id="menu-toggle" 
+      class="p-2 text-[#1c1c1a] hover:text-[#b38f4f] focus:outline-none focus:ring-2 focus:ring-[#b38f4f] rounded transition-colors duration-200 cursor-pointer"
+      aria-label="Toggle navigation menu"
+      aria-expanded="false"
+    >
+      <!-- Hamburger Icon (Three bars) -->
+      <svg id="menu-icon" class="w-6 h-6 stroke-current" fill="none" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <!-- Close Icon (X) -->
+      <svg id="close-icon" class="w-6 h-6 stroke-current hidden" fill="none" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    
+  </div>
+
+  <!-- Re-Architected Premium Dropdown Menu Panel -->
+  <div 
+    id="nav-menu" 
+    class="absolute top-20 left-0 right-0 z-40 bg-[#fbfbfa]/98 backdrop-blur-xl border-b border-stone-200/80 shadow-xl opacity-0 -translate-y-4 pointer-events-none transition-all duration-300 ease-out"
+  >
+    <div class="max-w-7xl mx-auto px-6 py-10 md:py-16 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+      
+      <!-- Left Column (Desktop Only): Architectural Studio Info -->
+      <div class="md:col-span-5 hidden md:flex flex-col justify-between border-r border-stone-200/60 pr-8">
+        <div class="space-y-4">
+          <span class="tracking-widest text-[10px] font-bold text-[#b38f4f] uppercase block">
+            Omaha Remodeling Studio
+          </span>
+          <p class="font-serif text-lg text-[#1c1c1a] italic leading-relaxed max-w-sm">
+            "We design and build spaces tailored to your lifestyle, handling every detail from blueprint to final finish."
+          </p>
+        </div>
+        <div class="text-xs text-stone-500 space-y-1 pt-6 border-t border-stone-100">
+          <p class="font-semibold text-[#1c1c1a]">Heartland Kitchen &amp; Bath</p>
+          <p>inquiry@heartlandkb.com | (402) 234-8900</p>
+          <p>Omaha, Nebraska</p>
+        </div>
+      </div>
+
+      <!-- Right Column: Premium Staggered Anchor Links -->
+      <div class="md:col-span-7 flex flex-col space-y-6 justify-center">
+        <nav class="flex flex-col space-y-5">
+          
+          <!-- Home Link -->
+          <a href="#" class="nav-link group flex items-start space-x-4 focus:outline-none">
+            <span class="font-serif text-sm md:text-base text-[#b38f4f] mt-0.5 select-none font-bold">01</span>
+            <div class="flex flex-col">
+              <span class="font-serif text-lg md:text-xl font-bold text-[#1c1c1a] group-hover:text-[#b38f4f] transition-colors duration-200 uppercase tracking-wider">
+                Home
+              </span>
+              <span class="text-xs text-stone-500 font-sans tracking-tight mt-0.5">Return to the start of our showcase</span>
+            </div>
+          </a>
+
+          <!-- Our Guarantee Link -->
+          <a href="#guarantee" class="nav-link group flex items-start space-x-4 focus:outline-none">
+            <span class="font-serif text-sm md:text-base text-[#b38f4f] mt-0.5 select-none font-bold">02</span>
+            <div class="flex flex-col">
+              <span class="font-serif text-lg md:text-xl font-bold text-[#1c1c1a] group-hover:text-[#b38f4f] transition-colors duration-200 uppercase tracking-wider">
+                Our Guarantee
+              </span>
+              <span class="text-xs text-stone-500 font-sans tracking-tight mt-0.5">Zero stress remodeling process</span>
+            </div>
+          </a>
+
+          <!-- Services Link -->
+          <a href="#services" class="nav-link group flex items-start space-x-4 focus:outline-none">
+            <span class="font-serif text-sm md:text-base text-[#b38f4f] mt-0.5 select-none font-bold">03</span>
+            <div class="flex flex-col">
+              <span class="font-serif text-lg md:text-xl font-bold text-[#1c1c1a] group-hover:text-[#b38f4f] transition-colors duration-200 uppercase tracking-wider">
+                Services
+              </span>
+              <span class="text-xs text-stone-500 font-sans tracking-tight mt-0.5">Kitchens, bathrooms, basements</span>
+            </div>
+          </a>
+
+          <!-- Testimonials Link -->
+          <a href="#testimonials" class="nav-link group flex items-start space-x-4 focus:outline-none">
+            <span class="font-serif text-sm md:text-base text-[#b38f4f] mt-0.5 select-none font-bold">04</span>
+            <div class="flex flex-col">
+              <span class="font-serif text-lg md:text-xl font-bold text-[#1c1c1a] group-hover:text-[#b38f4f] transition-colors duration-200 uppercase tracking-wider">
+                Testimonials
+              </span>
+              <span class="text-xs text-stone-500 font-sans tracking-tight mt-0.5">Omaha homeowner experiences</span>
+            </div>
+          </a>
+
+          <!-- Estimate Link -->
+          <a href="#contact-form" class="nav-link group flex items-start space-x-4 focus:outline-none">
+            <span class="font-serif text-sm md:text-base text-[#b38f4f] mt-0.5 select-none font-bold">05</span>
+            <div class="flex flex-col">
+              <span class="font-serif text-lg md:text-xl font-bold text-[#1c1c1a] group-hover:text-[#b38f4f] transition-colors duration-200 uppercase tracking-wider">
+                Request an Estimate
+              </span>
+              <span class="text-xs text-stone-500 font-sans tracking-tight mt-0.5 font-semibold">Start your project with a free 3D layout</span>
+            </div>
+          </a>
+
+        </nav>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- Offset space for fixed header -->
+<div class="h-20"></div>
+
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  if (toggleBtn && navMenu && menuIcon && closeIcon) {
+    const openMenu = () => {
+      navMenu.classList.remove('opacity-0', '-translate-y-4', 'pointer-events-none');
+      navMenu.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      menuIcon.classList.add('hidden');
+      closeIcon.classList.remove('hidden');
+      toggleBtn.setAttribute('aria-expanded', 'true');
+    };
+
+    const closeMenu = () => {
+      navMenu.classList.add('opacity-0', '-translate-y-4', 'pointer-events-none');
+      navMenu.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      menuIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+    };
+
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+      if (isExpanded) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    // Close menu when clicking an anchor link
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        closeMenu();
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      const target = e.target as HTMLElement;
+      if (!toggleBtn.contains(target) && !navMenu.contains(target)) {
+        closeMenu();
+      }
+    });
+  }
+</script>
